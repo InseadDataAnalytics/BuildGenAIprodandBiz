@@ -11,7 +11,13 @@ We we'll use only the access and login with OpenAI Services
 In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
 
 - Have a google Gmail Account , if not create one
-- Go to [https://colab.research.google.com/](https://colab.research.google.com/)
+
+Have to change here
+- Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow this links to have the latest notebook Google collab imported from this repositoy github
+
+- Google Collab [https://aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
+
+
 
 So you will have to manage python language , don't be afraid you will have help !! :smiling_face_with_three_hearts:
 
@@ -27,15 +33,20 @@ So you will have to manage python language , don't be afraid you will have help 
 
 #### Discover Sandbox Gpts /Chatbot
 
-To easily discover the concept of prompt engineering , models and Rag you could vist and test the sandbox Gpts ( very new announcement ) for testing to build and play with a chatbot interface.
+To easily discover the concept of prompt engineering , models and Rag you could vist and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface already avaiable for testing in a safe platform
 
 Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
 
-This interface will be shown
 
+
+If you want to know the diffence between each model for the choice , you can deep dive for undestand the difference [here](https://platform.openai.com/docs/models/overview)
+
+![Alt Text](img/assistantchatbotcreation.png)
+Selection your model, we will select gpt-4
+![Alt Text](img/modelsGpts.png)
+
+This interface will be shown after you have created correctly your chabot
 ![Alt text](img/playgroundChatbotOpenAi.png)
-
-
 
 
 
