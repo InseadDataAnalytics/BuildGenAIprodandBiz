@@ -1,11 +1,22 @@
-# INSEAD Course to Gen AI Demo
+# INSEAD Course for Gen AI App & Demo
 
 **For this course, for discovering the technologies AI/LLM and Gen AI**
 We we'll use only the access and login with OpenAI Services
 
 
 ## First steps 
+### Google Account for access to collab
 
+
+In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
+
+- Have a google Gmail Account , if not create one
+- Go to [https://colab.research.google.com/](https://colab.research.google.com/)
+
+So you will have to manage python language , don't be afraid you will have help !! :smiling_face_with_three_hearts:
+
+
+### OpenAi Account
 1. **Visit the OpenAI website**: Go to [https://www.openai.com/](https://www.openai.com/)
 
 2. **Create an account**: Click on the 'Sign Up' button on the top right corner of the website. Fill in your details and follow the prompts to create your account.
@@ -14,15 +25,17 @@ We we'll use only the access and login with OpenAI Services
 
 4. **Log in to your account**: After verifying your email, log in to your account using your credentials.
 
-## Discover Sandbox Gpts /Chatbot
+#### Discover Sandbox Gpts /Chatbot
 
 To easily discover the concept of prompt engineering , models and Rag you could vist and test the sandbox Gpts ( very new announcement ) for testing to build and play with a chatbot interface.
 
-![Alt text](img/playgroundChatbotOpenAi.png)
-
 Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
 
-The interface will be shown
+This interface will be shown
+
+![Alt text](img/playgroundChatbotOpenAi.png)
+
+
 
 
 
