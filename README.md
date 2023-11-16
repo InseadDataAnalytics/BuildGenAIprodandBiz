@@ -1,4 +1,4 @@
-# INSEAD Course for Gen AI App & Demo
+# INSEAD Course - Gen AI App & Demo - 101
 
 **For this course, for discovering the technologies AI/LLM and Gen AI**
 We we'll use only the access and login with OpenAI Services
@@ -10,7 +10,7 @@ We we'll use only the access and login with OpenAI Services
 
 In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
 
-- Have a google Gmail Account , if not create one
+- Have a google Gmail Account , if not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
 
 Have to change here
 - Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow this links to have the latest notebook Google collab imported from this repositoy github
@@ -80,7 +80,8 @@ You will have this kind of view after create (several keys) ![Alt text](img/apiK
 
 ### Glossary of AI Terms
 
-1. **LLM**: Stands for Large Language Models. These are AI models trained on a large amount of text data. They can generate human-like text based on the input they're given.
+1. **LLM / MODELS**: Stands for Large Language Models. These are AI models trained on a large amount of text data. They can generate human-like text based on the input they're given.
+You can read this page [MODELS](./MODELS.md)
 
 2. **Prompt engineering**: The practice of crafting effective prompts to get the desired output from a language model. It's a crucial part of working with models like GPT-3.
 
