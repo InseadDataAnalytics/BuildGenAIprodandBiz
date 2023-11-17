@@ -53,9 +53,9 @@ We will use the colab notebook :
 - Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
 
 - Use theses Google Collab to import the diffrent notebook :
-    - [https://aka.ms/inseadGenAI1](https://aka.ms/inseadGenAI1)
-    - [https://aka.ms/inseadGenAI2](https://aka.ms/inseadGenAI2)
-    - [https://aka.ms/inseadGenAI3](https://aka.ms/inseadGenAI3)
+    - Interview generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
+    - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
+    - Extract audio with whisper[https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
 
 You may encounter this element in warning click ok:
