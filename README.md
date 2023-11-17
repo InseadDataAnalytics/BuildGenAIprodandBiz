@@ -1,28 +1,15 @@
 # INSEAD Course - Gen AI App & Demo - 101
 
-**For this course, for discovering the technologies AI/LLM and Gen AI**
-We we'll use only the access and login with OpenAI Service
+**In this course, you will discover and test technologies AI/LLM for Gen AI**
 
+We'll use only OpenAI Service Apis and keys to access models, Google Collab python 
+
+The python notebook will be use in this platform.
+
+
+```In local : You can also use  Visual studio code or use Conda to launch Jupyter notebook with the files```
 
 ## First steps 
-### Google accound & Collab Notebook
-
-In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
-
-- Have a google Gmail Account , if not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
-
-We will use the colab notebook in google
-
-- Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
-
-- Use this Google Collab [https://aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
-
-- Add your secrets ( Key and organization from Open AI SK-XXX and org-xxxxxx ) in the left panel in Google Collab
-
-
-
-So you will have to use python language , don't be afraid you will have help !! :smiling_face_with_three_hearts: ( Gen Ai Help also )
-
 
 ### OpenAi Account
 1. **Visit the OpenAI website**: Go to [https://www.openai.com/](https://www.openai.com/)
@@ -35,11 +22,9 @@ So you will have to use python language , don't be afraid you will have help !! 
 
 #### Discover Sandbox Gpts /Chatbot
 
-To easily discover the concept of prompt engineering , models and [RAG acronym for retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface without coding.
+To discover the concept of prompt engineering , [models](./pages/models.md) and [RAG - retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface without coding.
 
 Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
-
-
 
 ![Alt Text](img/assistantchatbotcreation.png)
 Selection your model, we will select gpt-4
@@ -50,7 +35,28 @@ If you want to know differences between LLM model for the choice , you can deep 
 This interface will be shown after you have created correctly your chabot
 ![Alt text](img/playgroundChatbotOpenAi.png)
 
-You can also read this [page for understanding basic for prompt engineering / prompt system](PROMPTS.md)
+You can also read this [page for understanding basic in prompt engineering for prompt system](./pages/prompts.md)
+
+
+### Google accound & Colab Notebook
+
+In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
+
+- Have a google Gmail Account , if not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
+
+We will use the colab notebook :
+
+- Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
+
+- Use theses Google Collab to import :
+    - [https://aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
+    - Step 2
+    - Step 3
+
+- Add your secrets ( Key and organization from Open AI SK-XXX and org-xxxxxx ) in the left panel in Google Collab
+
+So you will have to use python language , don't be afraid you will have help !! :smiling_face_with_three_hearts: ( Gen Ai Help also )
+
 
 
 ### Reference links 
@@ -80,25 +86,9 @@ You will have this kind of view after create (several keys) ![Alt text](img/apiK
 **Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one by application or usage.
 
 
+- Resources :
+-- [AI Term Glossary](./pages/glossary.md)
 
-### Glossary of AI Terms
-
-1. **LLM / MODELS**: Stands for Large Language Models. These are AI models trained on a large amount of text data. They can generate human-like text based on the input they're given.
-You can read this page [MODELS](./MODELS.md)
-
-2. **Prompt engineering**: The practice of crafting effective prompts to get the desired output from a language model. It's a crucial part of working with models like GPT-3.
-
-3. **Tokens**: In the context of language models, a token can be as short as one character or as long as one word (e.g., 'a', 'apple'). Models read text in chunks called tokens.
-
-4. **RAG**: Stands for Retrieval-Augmented Generation. It's a method that combines the benefits of retriever models (which retrieve information from a document collection) and generator models (which generate text).
-
-5. **Embeddings**: In machine learning, embeddings are a type of representation that captures the semantic meaning of objects like words or items in a lower-dimensional space.
-
-6. **Models**: In AI, a model is a specific representation learned from data by applying some machine learning algorithm. A model is used to make predictions on new data.
-
-7. **Text 2 image**: Refers to AI models that can generate images from textual descriptions, such as DALL-E from OpenAI.
-
-8. **Speech to text**: Refers to technology that can convert spoken language into written text. This is useful for transcription services, voice assistants, and more.
 
 ### Azure and OpenAI: A Partnership for Large Language Models
 

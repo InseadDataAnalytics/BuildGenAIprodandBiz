@@ -1,6 +1,7 @@
 # Vids 
 
 vids/*.mp4
+vids/*.mp3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
