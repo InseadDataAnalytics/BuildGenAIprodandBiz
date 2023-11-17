@@ -41,8 +41,13 @@ This interface will be shown after you have created correctly your chabot
 
 You can also read this [page for understanding basic in prompt engineering for prompt system](./pages/prompts.md)
 
+Resource links:
+- Sandbox / Playground Open AI [https://platform.openai.com/playground](https://platform.openai.com/playground)
+- Documentation Assistants [https://platform.openai.com/docs/assistants/overview](https://platform.openai.com/docs/assistants/overview)
+- Apis open AI[https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
 
-### Google accound & Colab Notebook
+
+### Google account & Colab Notebook
 
 In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
 
@@ -53,12 +58,12 @@ We will use the colab notebook :
 - Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
 
 - Use theses Google Collab to import the diffrent notebook :
-    - Interview generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
+    - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
     - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
     - Extract audio with whisper[https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
 
-You may encounter this element in warning click ok:
+You may encounter on warning pop - click ok:
 
 ![Alt text ](./img/warningnotebook.png)
 
@@ -69,13 +74,23 @@ When the notebook is correctly import in your personal collab, you have to first
 ![Alt text](./img/secrets.png)
 Create one at a time the variable secret :
 
-Copy/paste this name : OPENAI_API_KEY  / Copy paste your sk-key inside the right input 
-Click on left blue button to render the secret available in your notebook
-Copy/paste this name : OPENAI_ORGANIZATION  / Copy paste your org-key inside the right input 
-Click on left blue button to render the secret available in your notebook
+- Copy/paste this name : ````OPENAI_API_KEY```` 
+-  Copy paste your sk-key inside the right input 
+- Click on the left blue button to render the secret available in your notebook
+
+> Next secret for organization
+
+- Copy/paste this name : ````OPENAI_ORGANIZATION````
+- Copy paste your org-key inside the right input 
+- Click on left blue button to render the secret available in your notebook
 
 
-So you will have to use python language , don't be afraid you will have help !! :smiling_face_with_three_hearts: ( Gen Ai Help also , you have to click on each step)
+Don't be afraid with **python** you will have help 
+ :smiling_face_with_three_hearts:
+
+ For a notebook you have to click on every small play inside the notebook
+
+ ![Alt text](./img/playbuttonnotebook.png)
 
 
 For the last Notebook, you could import you proper mp4 file video or audio, follow this:
@@ -87,11 +102,6 @@ Import your file inside the current path, say yes to the pop up warning
 
 ![Alt Text](./img/finaluploadinterviewfile.png)
 
-### Reference links 
-
-- Sandbox / Playground Open AI [https://platform.openai.com/playground](https://platform.openai.com/playground)
-- Documentation Assistants [https://platform.openai.com/docs/assistants/overview](https://platform.openai.com/docs/assistants/overview)
-- Apis open AI[https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
 
 ## Step-by-step guide to create a user login on OpenAI and prepare your organization and key
 
@@ -114,10 +124,11 @@ You will have this kind of view after create (several keys) ![Alt text](img/apiK
 **Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one by application or usage.
 
 
-- Resources :
-    - [AI Term Glossary](./pages/glossary.md)
-    - [ Models ](./pages/models.md)
-    - [ Prompt Engineering](./pages/prompts.md)
+### Reference links 
+
+- [AI Term Glossary](./pages/glossary.md)
+- [ Models ](./pages/models.md)
+- [ Prompt Engineering](./pages/prompts.md)
 
 
 ### Azure and OpenAI: A Partnership for Large Language Models
