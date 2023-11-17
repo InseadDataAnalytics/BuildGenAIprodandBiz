@@ -35,10 +35,9 @@ So you will have to use python language , don't be afraid you will have help !! 
 
 #### Discover Sandbox Gpts /Chatbot
 
-To easily discover the concept of prompt engineering , models and [RAG acronym for retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface already avaiable for testing in a safe platform
+To easily discover the concept of prompt engineering , models and [RAG acronym for retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface without coding.
 
 Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
-
 
 
 
@@ -46,7 +45,7 @@ Go to [https://platform.openai.com/playground](https://platform.openai.com/playg
 Selection your model, we will select gpt-4
 ![Alt Text](img/modelsGpts.png)
 
-If you want to know differences between  LLM model for the choice , you can deep dive  [here](https://platform.openai.com/docs/models/overview)
+If you want to know differences between LLM model for the choice , you can deep dive  [here](https://platform.openai.com/docs/models/overview)
 
 This interface will be shown after you have created correctly your chabot
 ![Alt text](img/playgroundChatbotOpenAi.png)
@@ -78,7 +77,7 @@ You will have this kind of view after create (several keys) ![Alt text](img/apiK
 
 ![Alt text](img/organizationOpenAi.png)
 
-**Remember**, keep your API key secure and do not share it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one by application or usage.
+**Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one by application or usage.
 
 
 
@@ -127,4 +126,4 @@ Developer Audience
 Azure Open AI Service  
 @Microsoft
 
-[GitHub](https://github.com/olivMetens) | [LinkedIn](https://linkedin.com/in/mertensolivier)
+[GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier)
