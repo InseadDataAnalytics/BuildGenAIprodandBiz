@@ -17,11 +17,11 @@ We will use the colab notebook in google
 
 - Use this Google Collab [https://aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
 
-- Add your secrets ( Key and organization ) in the left panel in Google Collab here
+- Add your secrets ( Key and organization from Open AI SK-XXX and org-xxxxxx ) in the left panel in Google Collab
 
 
 
-So you will have to manage python language , don't be afraid you will have help !! :smiling_face_with_three_hearts:
+So you will have to use python language , don't be afraid you will have help !! :smiling_face_with_three_hearts: ( Gen Ai Help also )
 
 
 ### OpenAi Account
@@ -35,7 +35,7 @@ So you will have to manage python language , don't be afraid you will have help 
 
 #### Discover Sandbox Gpts /Chatbot
 
-To easily discover the concept of prompt engineering , models and Rag you could vist and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface already avaiable for testing in a safe platform
+To easily discover the concept of prompt engineering , models and [RAG acronym for retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface already avaiable for testing in a safe platform
 
 Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
 
