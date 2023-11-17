@@ -84,7 +84,7 @@ We will use the colab notebook :
 - Use theses Google Collab to import the diffrent notebook :
     - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
     - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
-    - Extract audio with whisper[https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
+    - Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
 
 You may encounter on warning pop - click ok:
@@ -148,11 +148,7 @@ Microsoft Azure and OpenAI have formed a strategic partnership to develop and de
 
 This partnership represents a significant step forward in the development and deployment of large language models, with potential applications in a wide range of industries and sectors.
 
-If you want to discover more implementation in Tenant Azure cloud go to theses links
-
-- [Azure Open Ai services](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
-
-
+[If you want to discover more information in Azure Open AI services](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
 
 ---
 **Olivier Mertens**  
