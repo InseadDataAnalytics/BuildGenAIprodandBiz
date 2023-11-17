@@ -2,9 +2,7 @@
 
 **In this course, you will discover and test technologies AI/LLM for Gen AI**
 
-We'll use only OpenAI Service Apis and keys to access models, Google Collab python 
-
-
+We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/)  with python Language 
 
 > [IMPORTANT]
 > if you want to share this course use this link [aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
@@ -26,7 +24,7 @@ We'll use only OpenAI Service Apis and keys to access models, Google Collab pyth
 
 #### Discover Sandbox Gpts /Chatbot
 
-To discover the concept of prompt engineering , [models](./pages/models.md) and [RAG - retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface without coding.
+To discover the concept of [prompt engineering](./pages/prompts.md) , [models](./pages/models.md) and [RAG - retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox Gpts ( very new announcement ) for testing and play with a chatbot interface without coding.
 
 Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
 
@@ -34,7 +32,7 @@ Go to [https://platform.openai.com/playground](https://platform.openai.com/playg
 Selection your model, we will select gpt-4
 ![Alt Text](img/modelsGpts.png)
 
-If you want to know differences between LLM model for the choice , you can deep dive  [here](https://platform.openai.com/docs/models/overview)
+If you want to know differences between LLM model for the choice , you can deep dive  [on this link](https://platform.openai.com/docs/models/overview)
 
 This interface will be shown after you have created correctly your chabot
 ![Alt text](img/playgroundChatbotOpenAi.png)
@@ -44,7 +42,7 @@ You can also read this [page for understanding basic in prompt engineering for p
 Resource links:
 - Sandbox / Playground Open AI [https://platform.openai.com/playground](https://platform.openai.com/playground)
 - Documentation Assistants [https://platform.openai.com/docs/assistants/overview](https://platform.openai.com/docs/assistants/overview)
-- Apis open AI[https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
+- Api With open AI[https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
 
 
 ## Step-by-step guide to create a user login on OpenAI and prepare your organization and key
