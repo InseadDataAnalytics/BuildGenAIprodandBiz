@@ -1,6 +1,6 @@
-# For the last update for theses informations Models
+# Models & update for gpt 3 & 4 open aI
 
-updated from [page OpenAI Models](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)
+Updated from [page OpenAI Models](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)
 
 | Model | Description | Context Window | Training Data |
 |-------|-------------|----------------|---------------|
