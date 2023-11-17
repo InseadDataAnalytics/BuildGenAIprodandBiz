@@ -59,6 +59,9 @@ You can select the name you want
 
 You will have this kind of view after create (several keys) ![Alt text](img/apiKeysexampleopenAi.png)
 
+> [IMPORTANT]
+> Don't forget every usage of a model with OpenAI has a direct impact on bill by usage  (check this link to understand the difference in costing / models)[https://openai.com/pricing]
+
 7. **Copy your API key**: After creating your API key, make sure to copy it and store it somewhere safe. This key is used to authenticate your requests to the OpenAI API.
 
 8. **Set up your organization**: In the API dashboard, you can also set up your organization. This involves adding other users to your organization and managing their access levels.
