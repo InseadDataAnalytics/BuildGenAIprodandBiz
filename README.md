@@ -47,6 +47,27 @@ Resource links:
 - Apis open AI[https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
 
 
+## Step-by-step guide to create a user login on OpenAI and prepare your organization and key
+
+
+5. **Access the API dashboard**: Once logged in, navigate to the API dashboard named Api Keys. This is where you'll find or you have to create your API key.
+
+6. **Create a new API key**: If you don't already have an API key, you can create a new one by clicking on the 'Create new API key' button.
+
+![Alt text](img/secretkeygenerate.png)
+You can select the name you want
+
+You will have this kind of view after create (several keys) ![Alt text](img/apiKeysexampleopenAi.png)
+
+7. **Copy your API key**: After creating your API key, make sure to copy it and store it somewhere safe. This key is used to authenticate your requests to the OpenAI API.
+
+8. **Set up your organization**: In the API dashboard, you can also set up your organization. This involves adding other users to your organization and managing their access levels.
+
+![Alt text](img/organizationOpenAi.png)
+
+**Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one by application or usage.
+
+
 ### Google account & Colab Notebook
 
 In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
@@ -101,26 +122,6 @@ For the last Notebook, you could import you proper mp4 file video or audio, foll
 
 ![Alt Text](./img/finaluploadinterviewfile.png)
 
-
-## Step-by-step guide to create a user login on OpenAI and prepare your organization and key
-
-
-5. **Access the API dashboard**: Once logged in, navigate to the API dashboard named Api Keys. This is where you'll find or you have to create your API key.
-
-6. **Create a new API key**: If you don't already have an API key, you can create a new one by clicking on the 'Create new API key' button.
-
-![Alt text](img/secretkeygenerate.png)
-You can select the name you want
-
-You will have this kind of view after create (several keys) ![Alt text](img/apiKeysexampleopenAi.png)
-
-7. **Copy your API key**: After creating your API key, make sure to copy it and store it somewhere safe. This key is used to authenticate your requests to the OpenAI API.
-
-8. **Set up your organization**: In the API dashboard, you can also set up your organization. This involves adding other users to your organization and managing their access levels.
-
-![Alt text](img/organizationOpenAi.png)
-
-**Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one by application or usage.
 
 
 ### Reference links 
