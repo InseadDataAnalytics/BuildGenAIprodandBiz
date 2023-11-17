@@ -85,7 +85,7 @@ Import your file inside the current path, say yes to the pop up warning
 
 ![Alt text](./img/warningfileuploadnotebook.png)
 
-![Alt Text](./img/uploadfiletonoteook.png)
+![Alt Text](./img/finaluploadinterviewfile.png)
 
 ### Reference links 
 
