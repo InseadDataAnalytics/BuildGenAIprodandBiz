@@ -55,7 +55,7 @@ In order to simplify the problem of python version and different installation we
 
 We will use the colab notebook :
 
-- Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
+- Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebook - 3 usescaes
 
 - Use theses Google Collab to import the diffrent notebook :
     - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
@@ -94,9 +94,8 @@ Don't be afraid with **python** you will have help
 
 
 For the last Notebook, you could import you proper mp4 file video or audio, follow this:
-Click on the folder button on the left
-
-Import your file inside the current path, say yes to the pop up warning
+- Click on the folder button on the left
+- Import your file inside the current path, say yes to the pop up warning, you have to respect the naming or you will have to change the name in the 3 notebook
 
 ![Alt text](./img/warningfileuploadnotebook.png)
 
