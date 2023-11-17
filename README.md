@@ -52,16 +52,40 @@ We will use the colab notebook :
 
 - Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
 
-- Use theses Google Collab to import :
+- Use theses Google Collab to import the diffrent notebook :
     - [https://aka.ms/inseadGenAI1](https://aka.ms/inseadGenAI1)
     - [https://aka.ms/inseadGenAI2](https://aka.ms/inseadGenAI2)
     - [https://aka.ms/inseadGenAI3](https://aka.ms/inseadGenAI3)
 
+
+You may encounter this element in warning click ok:
+
+![Alt text ](./img/warningnotebook.png)
+
+When the notebook is correctly import in your personal collab, you have to first import your secrets
+
 - Add your secrets ( Key and organization imported form OpenAI **sk-XXX** and **org-xxxxxx** ) in the left panel in Google Collab
 
-So you will have to use python language , don't be afraid you will have help !! :smiling_face_with_three_hearts: ( Gen Ai Help also )
+![Alt text](./img/secrets.png)
+Create one at a time the variable secret :
+
+Copy/paste this name : OPENAI_API_KEY  / Copy paste your sk-key inside the right input 
+Click on left blue button to render the secret available in your notebook
+Copy/paste this name : OPENAI_ORGANIZATION  / Copy paste your org-key inside the right input 
+Click on left blue button to render the secret available in your notebook
 
 
+So you will have to use python language , don't be afraid you will have help !! :smiling_face_with_three_hearts: ( Gen Ai Help also , you have to click on each step)
+
+
+For the last Notebook, you could import you proper mp4 file video or audio, follow this:
+Click on the folder button on the left
+
+Import your file inside the current path, say yes to the pop up warning
+
+![Alt text](./img/warningfileuploadnotebook.png)
+
+![Alt Text](./img/uploadfiletonoteook.png)
 
 ### Reference links 
 
