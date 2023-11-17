@@ -5,9 +5,10 @@ Prompt engineering is the art of asking the right question to get the best outpu
 
 Links for reference and study :
 
-- [ earn Prompting Beginner](https://learnprompting.org/docs/basics/intro)
-- [ Learn Prompting Advanced]()
--
+- [ Learn Prompting Beginner](https://learnprompting.org/docs/basics/intro)
+- [ Learn Prompting Advanced](https://www.promptingguide.ai/)
+- [Prompt engineering Techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions)
+- [ Prompt engineering with Azure open Ai Service](https://learn.microsoft.com/en-us/training/modules/apply-prompt-engineering-azure-openai/)
 
 ## Tokens
 
@@ -42,7 +43,7 @@ Direct prompting, also known as Zero-shot, is the simplest type of prompt. It pr
 Chain-of-Thought (CoT) prompting is a type of language prompting technique used in natural language processing (NLP) that involves the generation and refinement of chains of reasoning to facilitate better language understanding and generation. In CoT prompting, a language model is presented with a prompt to perform a given task. The model is then given a set of rationales (or reasons) for why a given word or phrase might be the correct answer.
 
 You can use this sentence in your **prompt** to improve your results
-![Alt text](./img/COT%20trigger.png)
+![Cot trigger catch phrase](../img/COT%20trigger.png)
 
 ## Zero-Shot Learning
 
