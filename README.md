@@ -1,21 +1,23 @@
 # INSEAD Course - Gen AI App & Demo - 101
 
 **For this course, for discovering the technologies AI/LLM and Gen AI**
-We we'll use only the access and login with OpenAI Services
+We we'll use only the access and login with OpenAI Service
 
 
 ## First steps 
-### Google Account for access to collab
-
+### Google accound & Collab Notebook
 
 In order to simplify the problem of python version and different installation we will use this platform **notebook Colab** in order to increase the velocity for access 
 
 - Have a google Gmail Account , if not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
 
-Have to change here
-- Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow this links to have the latest notebook Google collab imported from this repositoy github
+We will use the colab notebook in google
 
-- Google Collab [https://aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
+- Go to [https://colab.research.google.com/](https://colab.research.google.com/) or follow thi links to have the latest notebook for the course  (imported from github repository course)
+
+- Use this Google Collab [https://aka.ms/InseadGenAI](https://aka.ms/InseadGenAI)
+
+- Add your secrets ( Key and organization ) in the left panel in Google Collab here
 
 
 
@@ -39,15 +41,17 @@ Go to [https://platform.openai.com/playground](https://platform.openai.com/playg
 
 
 
-If you want to know the diffence between each model for the choice , you can deep dive for undestand the difference [here](https://platform.openai.com/docs/models/overview)
 
 ![Alt Text](img/assistantchatbotcreation.png)
 Selection your model, we will select gpt-4
 ![Alt Text](img/modelsGpts.png)
 
+If you want to know differences between  LLM model for the choice , you can deep dive  [here](https://platform.openai.com/docs/models/overview)
+
 This interface will be shown after you have created correctly your chabot
 ![Alt text](img/playgroundChatbotOpenAi.png)
 
+You can also read this [page for understanding basic for prompt engineering / prompt system](PROMPTS.md)
 
 
 ### Reference links 
