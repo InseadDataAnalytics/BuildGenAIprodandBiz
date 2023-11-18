@@ -1,13 +1,6 @@
-<p align="center">Preparing for the course 
-(required to be completed <u><b>before</b></u> session 1)</p>
-
->Please follows these instructions to prepare <b>before the first session of the course</b>.
-
-
 <p align="center">
-    <b>INSEAD MBA Course "Building genAI Products and Businesses"</b> 
+    # INSEAD MBA Course "Building genAI Products and Businesses"
     T. Evgeniou, Professor INSEAD </p>
-
 
 <it>This material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </it>
 
