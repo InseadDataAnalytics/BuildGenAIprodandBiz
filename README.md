@@ -80,7 +80,7 @@ We will use the colab notebook:
 
 - Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
 
-- Use theses Google Collab to import the diffrent notebooks:
+- Use theses Google Collab to import the different notebooks:
     - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
     - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
     - Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
