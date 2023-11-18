@@ -1,6 +1,13 @@
+<p align="center">Preparing for the course 
+(required to be completed <u><b>before</b></u> session 1)</p>
+
+>Please follows these instructions to prepare for your first session of the course.
+
+
+
 # INSEAD Course - Gen AI App & Demo - 101
 
-**In this course, you will discover and test technologies AI/LLM for Gen AI**
+>*In this course, you will discover and test technologies AI/LLM for Gen AI ( aka generative AI)
 
 We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/)  with python Language 
 
