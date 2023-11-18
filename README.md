@@ -4,12 +4,14 @@
 >Please follows these instructions to prepare <b>before the first session of the course</b>.
 
 
+<p align="center">
+    <b>INSEAD MBA Course "Building genAI Products and Businesses"</b> 
+    T. Evgeniou, Professor INSEAD </p>
 
-# INSEAD MBA Course "Building genAI Products and Businesses" - T. Evgeniou, Professor INSEAD 
 
 <it>This material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </it>
 
->*In the first session, we will learn about some Gen AI tools that we will use for product prototyping during the class.
+In the first session, we will learn about some Gen AI tools that we will use for product prototyping during the class.
 
 We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/)  with python Language 
 
