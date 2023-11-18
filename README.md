@@ -7,10 +7,10 @@
 
 In the first session, we will learn about some Gen AI tools that we will use for product prototyping during the class.
 
-We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/)  with python Language 
+We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/) (browser based) for some python coding. 
 
 > [NOTE]
-> you can also use all notebooks in a local/computer: with Visual studio code or using Conda to launch Jupyter notebook
+> You can also use all notebooks in a local/your computer: with Visual studio code or using Conda to launch Jupyter notebook
 
 ## First steps 
 
@@ -25,20 +25,18 @@ We'll use  OpenAI Service and keys to access/use models with the use of apis and
 
 #### Discover Sandbox GPTs 
 
-To discover the concept of [prompt engineering](./pages/prompts.md), [models](./pages/models.md) and [RAG - retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox GPTs (just announced by OpenAI in November 2023) to play with a chatbot interface without the need to code ("No Code" environment).
-
-Go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
+To experiment with the key concepts of [prompt engineering](./pages/prompts.md), [models](./pages/models.md) and [RAG - retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox GPTs (just announced by OpenAI in November 2023) to play with a chatbot interface without the need to code ("No Code" environment). To do so, you can go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
 
 ![Alt Text](img/assistantchatbotcreation.png)
-Select your model (e.g., we can select gpt-4)
+Select your model (e.g., we can select gpt-4 or earlier - and less costly - ones like gpt-3.5-turbo)
 ![Alt Text](img/modelsGpts.png)
 
-If you want to know about differences between the available LLM models, you can deep dive at [on this link](https://platform.openai.com/docs/models/overview)
+If you want to know about differences between the available LLM models, you can deep dive at [this link](https://platform.openai.com/docs/models/overview)
 
 This interface will be shown after you have correctly created your chabot
 ![Alt text](img/playgroundChatbotOpenAi.png)
 
-You can also read this for some more background [page for understanding basic in prompt engineering for prompt system](./pages/prompts.md)
+You can also read this for some more background [on basic prompt engineering](./pages/prompts.md)
 
 Other resources:
 - Sandbox / Playground Open AI [https://platform.openai.com/playground](https://platform.openai.com/playground)
@@ -57,8 +55,10 @@ Other resources:
 You can select the name you want
 
 You will have this kind of view after creating a key (or several keys) ![Alt text](img/apiKeysexampleopenAi.png)
+<br>
+<br>
 
-> [IMPORTANT]
+> <b>IMPORTANT</b>
 > Don't forget every usage of a model with OpenAI will <b>cost</b>  something! (check this link to understand the difference in pricing / models)[https://openai.com/pricing]
 
 7. **Copy your API key**: After creating your API key, make sure to copy it and store it <b>somewhere safe</b>. This key is used to authenticate your requests to the OpenAI API. <b>Whoever has access to it will be charging your account when using it!</b>
@@ -72,7 +72,7 @@ You will have this kind of view after creating a key (or several keys) ![Alt tex
 
 ### Google account & Colab Notebook
 
-In order to simplify potential issues with different python versions or different operating systems and installations on your personal computer, we will use this platform **notebook Colab** for the course. You can of course also work on your computer if you choose to, using for example [Anaconda](https://www.anaconda.com/) (at your responsibility).
+In order to simplify potential issues with different python versions or different operating systems and installations on your personal computer, we will use **notebook Colab** for the course. You can of course also work on your computer if you choose to, using for example [Anaconda](https://www.anaconda.com/) (beyond the course).
 
 - You need to have a Google Gmail Account. If not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
 
@@ -80,7 +80,7 @@ We will use the colab notebook:
 
 - Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
 
-- Use theses Google Collab to import the diffrent notebooks:
+- Use these Google Collab examples to import the diffrent notebooks:
     - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
     - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
     - Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
@@ -95,28 +95,28 @@ When the notebook is correctly imported in your personal collab, you have to fir
 - Add your secrets (Key and organization imported form OpenAI **sk-XXX** and **org-xxxxxx**) in the left panel in Google Collab
 
 ![Alt text](./img/secrets.png)
-Create the variable secrets one at a time :
+Create the variable secrets one at a time:
 
-- Copy/paste this name : ````OPENAI_API_KEY```` 
+- Copy/paste this name: ````OPENAI_API_KEY```` 
 - Copy paste your sk-key inside the right input 
 - Click on the left blue button to render the secret available in your notebook
 
 > Next, if needed, you can also add "secret" for an organization (not necessary for the course)
 
-- Copy/paste this name : ````OPENAI_ORGANIZATION````
+- Copy/paste this name: ````OPENAI_ORGANIZATION````
 - Copy paste your org-key inside the right input 
 - Click on left blue button to render the secret available in your notebook
 
 
-Don't be afraid with **python** you will also get help! 
+Don't be afraid of **python** you will also get help! 
  :smiling_face_with_three_hearts:
 
-For a notebook you have to click on every small "play button" inside the notebook
+To use/run a notebook you have to click on every small "play button" inside the notebook
 
  ![Alt text](./img/playbuttonnotebook.png)
 
 
-For the last Notebook, you could import you proper mp4 file video or audio to analyse. To so so, follow this:
+For the last Notebook, you can import you own mp4 file video or audio to analyse. To so so:
 - Click on the folder button on the left
 - Import your file inside the current path, say yes to the pop up warning. Note that you have to respect the file naming or else you will have to change the name in the notebook itself
 
