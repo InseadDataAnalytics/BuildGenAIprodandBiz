@@ -1,8 +1,9 @@
-<p align="center">
-    # INSEAD MBA Course "Building genAI Products and Businesses"
-    T. Evgeniou, Professor INSEAD </p>
+   # INSEAD MBA Course "Building genAI Products and Businesses"
+   **T. Evgeniou, Professor INSEAD** [GitHub](https://github.com/tevgeniou) | [LinkedIn](https://www.linkedin.com/in/theodoros-evgeniou-5397b/)
 
-<it>This material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </it>
+<b><it>The material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </b></it>
+</br>
+</br>
 
 In the first session, we will learn about some Gen AI tools that we will use for product prototyping during the class.
 
@@ -14,7 +15,7 @@ We'll use  OpenAI Service and keys to access/use models with the use of apis and
 ## First steps 
 
 ### OpenAI Account
-1. **Visit the OpenAI website**: Go to [https://www.openai.com/](https://www.openai.com/)
+1. **Go to the OpenAI website**: Go to [https://www.openai.com/](https://www.openai.com/)
 
 2. **Create an account**: Click on the 'Sign Up' button on the top right corner of the website. Fill in your details and follow the prompts to create your account.
 
@@ -132,4 +133,4 @@ For the last Notebook, you could import you proper mp4 file video or audio to an
 - [ Prompt Engineering](./pages/prompts.md)
 
 
-[If you want to discover more information in Azure Open AI services](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
+[More information on Azure Open AI services can be found here](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
