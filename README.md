@@ -111,6 +111,8 @@ To use/run a notebook you have to click on every small "play button" inside the 
 
  ![Alt text](./img/playbuttonnotebook.png)
 
+**Note** that for the three example notebooks the very first "code chunk" (that installs packages) may take a few seconds to run and will be generating some messages. Simply wait till it completes running. 
+
 </br> 
 
 For the third (audio analysis) Notebook, you can import you own mp4 file video or audio to analyse. To so so:
