@@ -76,21 +76,19 @@ In order to simplify potential issues with different python versions or differen
 
 - You need to have a Google Gmail Account. If not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
 
-We will use the colab notebook:
+## Exploring genAI: Three Examples
 
-- Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
-
-
-- Use theses Google Collab to import the different notebooks:
-    - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
-    - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
-    - Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
+We will use these three colab notebooks as starting examples. Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
+<br>
+- Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
+- Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
+- (This one will require some more steps, see below) Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
 You may encounter warning pop-up windows - click **ok**
 
 ![Alt text ](./img/warningnotebook.png)
 
-When the notebook is correctly imported in your personal collab, you have to first import your "secrets"
+When a notebook is correctly imported in your personal collab, you have to first import your "secrets"
 
 - Add your secrets (Key and organization imported form OpenAI **sk-XXX** and **org-xxxxxx**) in the left panel in Google Collab
 
@@ -101,32 +99,39 @@ Create the variable secrets one at a time:
 - Copy paste your sk-key inside the right input 
 - Click on the left blue button to render the secret available in your notebook
 
-> Next, if needed, you can also add "secret" for an organization (not necessary for the course)
+> Next, if needed (you do **not** need to do this for the course), you can also add "secret" for an organization:
 
 - Copy/paste this name: ````OPENAI_ORGANIZATION````
 - Copy paste your org-key inside the right input 
 - Click on left blue button to render the secret available in your notebook
 
-
-Don't be afraid of **python** you will also get help! 
- :smiling_face_with_three_hearts:
+</br>
 
 To use/run a notebook you have to click on every small "play button" inside the notebook
 
  ![Alt text](./img/playbuttonnotebook.png)
 
+**Note** that for the three example notebooks the very first "code chunk" (that installs packages) may take a few seconds to run and will be generating some messages. Simply wait till it completes running. 
 
-For the last Notebook, you can import you own mp4 file video or audio to analyse. To so so:
+</br> 
+
+For the third (audio analysis) Notebook, you can import you own mp4 file video or audio to analyse. To so so:
 - Click on the folder button on the left
-- Import your file inside the current path, say yes to the pop up warning. Note that you have to respect the file naming or else you will have to change the name in the notebook itself
+- Import your file inside the current path - click yes to the pop up warning. Note that you have to respect the file naming ("interview.mp4") or else you will have to change the name in the notebook itself in the line *inputFile = "/content/interview.mp4"*
 
-![Alt text](./img/warningfileuploadnotebook.png)
+</br>
 
 ![Alt Text](./img/finaluploadinterviewfile.png)
 
+</br>
+
+# You are now ready to explore! Have Fun!
+
+### Don't be afraid of **python** you will also get help! 
+ :smiling_face_with_three_hearts:
 
 
-### Some reference links 
+# Some reference links 
 
 - [AI Term Glossary](./pages/glossary.md)
 - [ Models ](./pages/models.md)
