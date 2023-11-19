@@ -82,7 +82,7 @@ We will use these three colab notebooks as starting examples. Go to [https://col
 <br>
 - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
 - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
-- Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
+- (This one will require some more steps, see below) Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
 You may encounter warning pop-up windows - click **ok**
 
@@ -105,18 +105,23 @@ Create the variable secrets one at a time:
 - Copy paste your org-key inside the right input 
 - Click on left blue button to render the secret available in your notebook
 
-<br>
+</br>
 
 To use/run a notebook you have to click on every small "play button" inside the notebook
 
  ![Alt text](./img/playbuttonnotebook.png)
 
+</br> 
 
-For the last Notebook, you can import you own mp4 file video or audio to analyse. To so so:
+For the third (audio analysis) Notebook, you can import you own mp4 file video or audio to analyse. To so so:
 - Click on the folder button on the left
-- Import your file inside the current path - click yes to the pop up warning. Note that you have to respect the file naming or else you will have to change the name in the notebook itself
+- Import your file inside the current path - click yes to the pop up warning. Note that you have to respect the file naming ("interview.mp4") or else you will have to change the name in the notebook itself in the line *inputFile = "/content/interview.mp4"*
+
+</br>
 
 ![Alt Text](./img/finaluploadinterviewfile.png)
+
+</br>
 
 # You are now ready to explore! Have Fun!
 
