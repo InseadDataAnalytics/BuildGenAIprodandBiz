@@ -76,21 +76,19 @@ In order to simplify potential issues with different python versions or differen
 
 - You need to have a Google Gmail Account. If not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
 
-We will use the colab notebook:
+## Exploring genAI: Three Examples
 
-- Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
-
-
-- Use theses Google Collab to import the different notebooks:
-    - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
-    - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
-    - Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
+We will use these three colab notebooks as starting examples. Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
+<br>
+- Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
+- Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
+- Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
 You may encounter warning pop-up windows - click **ok**
 
 ![Alt text ](./img/warningnotebook.png)
 
-When the notebook is correctly imported in your personal collab, you have to first import your "secrets"
+When a notebook is correctly imported in your personal collab, you have to first import your "secrets"
 
 - Add your secrets (Key and organization imported form OpenAI **sk-XXX** and **org-xxxxxx**) in the left panel in Google Collab
 
