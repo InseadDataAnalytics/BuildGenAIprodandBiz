@@ -99,13 +99,12 @@ Create the variable secrets one at a time:
 - Copy paste your sk-key inside the right input 
 - Click on the left blue button to render the secret available in your notebook
 
-> Next, if needed, you can also add "secret" for an organization (not necessary for the course)
+> Next, if needed (you do **not** need to do this for the course), you can also add "secret" for an organization:
 
 - Copy/paste this name: ````OPENAI_ORGANIZATION````
 - Copy paste your org-key inside the right input 
 - Click on left blue button to render the secret available in your notebook
 
-<br>
 <br>
 
 To use/run a notebook you have to click on every small "play button" inside the notebook
