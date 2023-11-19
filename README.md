@@ -84,6 +84,8 @@ We will use these three colab notebooks as starting examples. Go to [https://col
 - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
 - (This one will require some more steps, see below) Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
+We will be adding more over time (as you will notice). 
+
 You may encounter warning pop-up windows - click **ok**
 
 ![Alt text ](./img/warningnotebook.png)
