@@ -107,9 +107,8 @@ Create the variable secrets one at a time:
 - Copy paste your org-key inside the right input 
 - Click on left blue button to render the secret available in your notebook
 
-
-Don't be afraid of **python** you will also get help! 
- :smiling_face_with_three_hearts:
+<br>
+<br>
 
 To use/run a notebook you have to click on every small "play button" inside the notebook
 
@@ -118,15 +117,17 @@ To use/run a notebook you have to click on every small "play button" inside the 
 
 For the last Notebook, you can import you own mp4 file video or audio to analyse. To so so:
 - Click on the folder button on the left
-- Import your file inside the current path, say yes to the pop up warning. Note that you have to respect the file naming or else you will have to change the name in the notebook itself
-
-![Alt text](./img/warningfileuploadnotebook.png)
+- Import your file inside the current path - click yes to the pop up warning. Note that you have to respect the file naming or else you will have to change the name in the notebook itself
 
 ![Alt Text](./img/finaluploadinterviewfile.png)
 
+# You are now ready to explore! Have Fun!
+
+### Don't be afraid of **python** you will also get help! 
+ :smiling_face_with_three_hearts:
 
 
-### Some reference links 
+# Some reference links 
 
 - [AI Term Glossary](./pages/glossary.md)
 - [ Models ](./pages/models.md)
