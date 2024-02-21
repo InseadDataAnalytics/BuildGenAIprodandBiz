@@ -83,7 +83,9 @@ You will have this kind of view after creating a key (or several keys) ![Alt tex
 
 ### Google account & Collab Notebook
 
-In order to simplify potential issues with different python versions or different operating systems and installations on your personal computer, we will use **notebook Colab** for the course. You can of course also work on your computer if you choose to, using for example [Anaconda](https://www.anaconda.com/) (beyond the course).
+In order to simplify potential issues with different python versions or different operating systems and problematic install on your personal computer.
+
+We will use **notebook Collab** for this course. You can of course also work on your computer if you choose to, using for example [Anaconda](https://www.anaconda.com/) (beyond the course).
 
 - You need to have a Google Gmail Account. If not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
 
@@ -97,25 +99,25 @@ We will use these three colab notebooks as starting examples. Go to [https://col
 
 We will be adding more over time (as you will notice). 
 
-You may encounter warning pop-up windows - click **ok**
+You may encounter warning pop-up windows - click **ok** or **execute** to continue.
 
 ![Alt text ](./img/warningnotebook.png)
 
-When a notebook is correctly imported in your personal collab, you have to first import your "secrets"
+When a notebook is correctly imported in your personal collab, you have to first import your __secrets__ credentials.
 
 - Add your secrets (Key and organization imported form OpenAI **sk-XXX** and **org-xxxxxx**) in the left panel in Google Collab
 
 ![Alt text](./img/secrets.png)
-Create the variable secrets one at a time:
+Create a variable secret one at a time:
 
 - Copy/paste this name: ````OPENAI_API_KEY```` 
-- Copy paste your sk-key inside the right input 
+- Copy paste your sk-key inside the right input named value
 - Click on the left blue button to render the secret available in your notebook
 
-> Next, if needed (you do **not** need to do this for the course), you can also add "secret" for an organization:
+> Next, if needed (you do **not** need to do this for the course), you can also add a __secret__ key and value for an organization:
 
 - Copy/paste this name: ````OPENAI_ORGANIZATION````
-- Copy paste your org-key inside the right input 
+- Copy paste your org-key inside the right input input named value
 - Click on left blue button to render the secret available in your notebook
 
 </br>
@@ -170,10 +172,10 @@ So click on this page inside the repository to follow the step for a beginner ( 
 
 ### Reference links apps starter
 
-- [ Starters usecase AI ina box apps](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
+- [ Starters usecase AI in a box](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
 - [ Sample App With RAG](https://aka.ms/ragchat)
 - [ Call center Claim Ai phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
-- [ Vidéo démo Github openAi apps on Azure - Dev](https://www.youtube.com/watch?v=j8i-OM5kwiY)
+- [ Youtube - Github OpenAi RAG App on Azure](https://www.youtube.com/watch?v=j8i-OM5kwiY)
 
 
 ## Reference links 
