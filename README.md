@@ -138,6 +138,14 @@ For the third (audio analysis) Notebook, you can import you own mp4 file video o
 
 </br>
 
+
+## You are now ready to explore! Have Fun!
+
+__Don't be afraid of **python** you will also get help!__
+
+ :smiling_face_with_three_hearts:
+
+
 ## Gen AI in real world
 
 So and now you have a first idea of what you can do with Gen AI. You can use it for many different applications
@@ -148,25 +156,24 @@ But for beginners let's start simple, here is an fonctionnal application with re
 
 we'll stay in python language for simplicity reason, but you can explore other language like dotnet or java 
 
-> Some software architecture and decisions made coul be **critical** in your launch of a product, but it's not the purpose of this course
+> Some software architecture and decisions made could be **critical** in your launch of a product, but it's not the purpose of this course
 
 The idea is to implement you code python inside a file for be able to use it this web application
 
-We will use the lastet developement in a beta feature from OpenAI: the "Assistants" (in beta at the time of writing this notebook)
+We will use the lastet developement in a beta feature from OpenAI: the "Assistants" (in beta at the time of writing this notebook) and follow theses video guide to create a simple chatbot with OpenAI and Azure [https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
+
+So click on this page inside the repository to follow the step for a beginner ( not a developper)
+[Implement your code inside an app already existing](./pages/appstarter.md)
+
 
 ( Notebook reference assistants )[https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box]
 
 ### Reference links apps starter
 
 - [ Starters usecase AI ina box apps](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
-- [ Sample App With RAG](https://github.com/Azure-Samples/azure-search-openai-demo/?tab=readme-ov-file#deploying-from-scratch)
+- [ Sample App With RAG](https://aka.ms/ragchat)
 - [ Call center Claim Ai phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
-
-## You are now ready to explore! Have Fun!
-
-__Don't be afraid of **python** you will also get help!__
-
- :smiling_face_with_three_hearts:
+- [ Vidéo démo Github openAi apps on Azure - Dev](https://www.youtube.com/watch?v=j8i-OM5kwiY)
 
 
 ## Reference links 
