@@ -9,15 +9,25 @@ In the first session, we will learn about some Gen AI tools that we will use for
 
 We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/) (browser based) for some python coding. 
 
-> [NOTE]
+> **[NOTE]**
 > You can also use all notebooks in a local/your computer: with Visual studio code or using Conda to launch Jupyter notebook
+> You have to install this sofware to use in in local
+
+Summary of the session:
+- [First steps](#first-steps)
+- [Create a user login on OpenAI and prepare your organization and keys](#create-a-user-login-on-openai-and-prepare-your-organization-and-keys)
+- [Exploring genAI: Three Examples](#exploring-genai-three-examples)
+- [Gen AI in real world](#gen-ai-in-real-world) 
+- [Reference links](#reference-links)
+
 
 ## First steps 
 
 ### OpenAI Account
-1. **Go to the OpenAI website**: Go to [https://www.openai.com/](https://www.openai.com/)
 
-2. **Create an account**: Click on the 'Sign Up' button on the top right corner of the website. Fill in your details and follow the prompts to create your account.
+1. **Go to the OpenAI website**:  [https://www.openai.com/](https://www.openai.com/)
+
+2. **Create an account**: Click on the 'Sign Up' button on the top right corner of the website. Fill in your details and follow the steps to create your account.
 
 3. **Verify your email**: Check your email for a verification link from OpenAI. Click on the link to verify your account.
 
@@ -33,7 +43,7 @@ Select your model (e.g., we can select gpt-4 or earlier - and less costly - ones
 
 If you want to know about differences between the available LLM models, you can deep dive at [this link](https://platform.openai.com/docs/models/overview)
 
-This interface will be shown after you have correctly created your chabot
+This interface will be shown after you have correctly created your chatbot
 ![Alt text](img/playgroundChatbotOpenAi.png)
 
 You can also read this for some more background [on basic prompt engineering](./pages/prompts.md)
@@ -44,12 +54,12 @@ Other resources:
 - API With openAI [https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
 
 
-## Step-by-step guide to create a user login on OpenAI and prepare your organization and key
+## Create a user login on OpenAI and prepare your organization and keys
 
 
-5. **Access the API dashboard**: Once logged in, navigate to the API dashboard named Api Keys. 
+1. **Access the API dashboard**: Once logged in, navigate to the API dashboard named Api Keys. 
 
-6. **Create a new API key**: If you don't already have an API key, you can create a new one by clicking on the 'Create new API key' button.
+2. **Create a new API key**: If you don't already have an API key, you can create a new one by clicking on the 'Create new API key' button.
 
 ![Alt text](img/secretkeygenerate.png)
 You can select the name you want
@@ -58,8 +68,9 @@ You will have this kind of view after creating a key (or several keys) ![Alt tex
 <br>
 <br>
 
-> <b>IMPORTANT</b>
-> Don't forget every usage of a model with OpenAI will <b>cost</b>  something! (check this link to understand the difference in pricing / models)[https://openai.com/pricing]
+> **IMPORTANT**
+> Don't forget every usage of a model with OpenAI will **cost**  something! ( and the price depends of your chosen model)
+> check this link to understand the difference in pricing / models)[https://openai.com/pricing]
 
 7. **Copy your API key**: After creating your API key, make sure to copy it and store it <b>somewhere safe</b>. This key is used to authenticate your requests to the OpenAI API. <b>Whoever has access to it will be charging your account when using it!</b>
 
@@ -70,7 +81,7 @@ You will have this kind of view after creating a key (or several keys) ![Alt tex
 **Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one for each application or usage.
 
 
-### Google account & Colab Notebook
+### Google account & Collab Notebook
 
 In order to simplify potential issues with different python versions or different operating systems and installations on your personal computer, we will use **notebook Colab** for the course. You can of course also work on your computer if you choose to, using for example [Anaconda](https://www.anaconda.com/) (beyond the course).
 
@@ -109,15 +120,15 @@ Create the variable secrets one at a time:
 
 </br>
 
-To use/run a notebook you have to click on every small "play button" inside the notebook
+To use/run a notebook you have to click on every small "play button" inside the notebook **on the left** of the code chunk.
 
  ![Alt text](./img/playbuttonnotebook.png)
 
-**Note** that for the three example notebooks the very first "code chunk" (that installs packages) may take a few seconds to run and will be generating some messages. Simply wait till it completes running. 
+>**[Note]** The three example notebooks the very first "code chunk" (that installs packages) may take a few seconds to run and will be generating some messages. Simply wait till it completes running. 
 
 </br> 
 
-For the third (audio analysis) Notebook, you can import you own mp4 file video or audio to analyse. To so so:
+For the third (audio analysis) Notebook, you can import you own mp4 file video or audio to analyse. To do so:
 - Click on the folder button on the left
 - Import your file inside the current path - click yes to the pop up warning. Note that you have to respect the file naming ("interview.mp4") or else you will have to change the name in the notebook itself in the line *inputFile = "/content/interview.mp4"*
 
@@ -127,16 +138,45 @@ For the third (audio analysis) Notebook, you can import you own mp4 file video o
 
 </br>
 
-# You are now ready to explore! Have Fun!
+## Gen AI in real world
 
-### Don't be afraid of **python** you will also get help! 
+So and now you have a first idea of what you can do with Gen AI. You can use it for many different applications
+The usecases and possibilities are endless. depends of you and your paint points you want to adress:
+The technologies are like a block lego, you hae to assemble them to create your own solution.
+
+But for beginners let's start simple, here is an fonctionnal application with really simple usecase
+
+we'll stay in python language for simplicity reason, but you can explore other language like dotnet or java 
+
+> Some software architecture and decisions made coul be **critical** in your launch of a product, but it's not the purpose of this course
+
+The idea is to implement you code python inside a file for be able to use it this web application
+
+We will use the lastet developement in a beta feature from OpenAI: the "Assistants" (in beta at the time of writing this notebook)
+
+( Notebook reference assistants )[https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box]
+
+### Reference links apps starter
+
+- [ Starters usecase AI ina box apps](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
+- [ Sample App With RAG](https://github.com/Azure-Samples/azure-search-openai-demo/?tab=readme-ov-file#deploying-from-scratch)
+- [ Call center Claim Ai phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
+
+## You are now ready to explore! Have Fun!
+
+__Don't be afraid of **python** you will also get help!__
+
  :smiling_face_with_three_hearts:
 
 
-# Some reference links 
+## Reference links 
 
 - [AI Term Glossary](./pages/glossary.md)
 - [ Models ](./pages/models.md)
+- [ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants)
+- [ Generative AI Guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
+- [ AI in a Box ]()
+- [ AI Chat App Hack](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
 - [ Prompt Engineering](./pages/prompts.md)
 
 
