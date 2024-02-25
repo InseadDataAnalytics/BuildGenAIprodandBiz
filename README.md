@@ -169,7 +169,7 @@ Some example assistants can be found [here](https://github.com/Azure/AI-in-a-Box
 
 - [ Starters use case: AI in a box](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
 - [ Sample App With RAG](https://aka.ms/ragchat)
-- [ Call center Claim Ai phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
+- [ Call center Claim AI phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
 - [ Youtube - Github OpenAi RAG App on Azure](https://www.youtube.com/watch?v=j8i-OM5kwiY)
 
 
