@@ -150,29 +150,24 @@ __Don't be afraid of **python** you will also get help!__
 
 ## Gen AI in real world
 
-So and now you have a first idea of what you can do with Gen AI. You can use it for many different applications
-The usecases and possibilities are endless. depends of you and your paint points you want to adress:
-The technologies are like a block lego, you hae to assemble them to create your own solution.
+Now you have an idea of what one can do with Gen AI. One can use it for many different applications. However, going from a Python Notebook "demo" to an actual product requires some engineering. The tools needed are in some ways like lego blocks: one can combine them to create their own solution.
 
-But for beginners let's start simple, here is an fonctionnal application with really simple usecase
+Let's see how to build actual gen AI products! Let's start simple, with a really simple use case. The idea of the example here is to insert some python code inside a file to be able to use it as part of a web application.
 
-we'll stay in python language for simplicity reason, but you can explore other language like dotnet or java 
+We use python  for simplicity, but one can explore other languages like dotnet, java or others. 
 
-> Some software architecture and decisions made could be **critical** in your launch of a product, but it's not the purpose of this course
+> Note: Some software architecture decisions could be **critical** in your launch of a product. Understanding the choices and trade offs is very important, but not the purpose of this course.
 
-The idea is to implement you code python inside a file for be able to use it this web application
+We will use the lastet developement (in beta version as of February 2024) from OpenAI: the "Assistants". You can follow theses video guides to create a simple chatbot with OpenAI and Azure [https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
 
-We will use the lastet developement in a beta feature from OpenAI: the "Assistants" (in beta at the time of writing this notebook) and follow theses video guide to create a simple chatbot with OpenAI and Azure [https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
-
-So click on this page inside the repository to follow the step for a beginner ( not a developper)
+Click here to follow the steps ("for a beginner, not a developper")
 [Implement your code inside an app already existing](./pages/appstarter.md)
 
-
-( Notebook reference assistants )[https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box]
+(Notebook reference assistants)[https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box]
 
 ### Reference links apps starter
 
-- [ Starters usecase AI in a box](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
+- [ Starters use case: AI in a box](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
 - [ Sample App With RAG](https://aka.ms/ragchat)
 - [ Call center Claim Ai phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
 - [ Youtube - Github OpenAi RAG App on Azure](https://www.youtube.com/watch?v=j8i-OM5kwiY)
@@ -180,7 +175,7 @@ So click on this page inside the repository to follow the step for a beginner ( 
 
 ## Reference links 
 
-- [AI Term Glossary](./pages/glossary.md)
+- [ AI Term Glossary](./pages/glossary.md)
 - [ Models ](./pages/models.md)
 - [ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants)
 - [ Generative AI Guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
