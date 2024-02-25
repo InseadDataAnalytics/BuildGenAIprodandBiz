@@ -148,22 +148,22 @@ __Don't be afraid of **python** you will also get help!__
  :smiling_face_with_three_hearts:
 
 
-## Gen AI in real world
+## Gen AI Products in Real World (Optional)
 
-Now you have an idea of what one can do with Gen AI. One can use it for many different applications. However, going from a Python Notebook "demo" to an actual product requires some engineering. The tools needed are in some ways like lego blocks: one can combine them to create their own solution.
+Now you have an idea of what one can do with Gen AI - one can use it for many different applications. However, going from a Python Notebook "demo" to an actual product requires some engineering. The tools needed are in some ways like lego blocks: one can combine them to create their own solution.
 
-Let's see how to build actual gen AI products! Let's start simple, with a really simple use case. The idea of the example here is to insert some python code inside a file to be able to use it as part of a web application.
+Let's now see how to build actual gen AI products! Let's start with a really simple use case. The idea of the example here is to insert some python code inside a file of an existing web application to be able to use it as part of that application.
 
 We use python  for simplicity, but one can explore other languages like dotnet, java or others. 
 
 > Note: Some software architecture decisions could be **critical** in your launch of a product. Understanding the choices and trade offs is very important, but not the purpose of this course.
 
-We will use the lastet developement (in beta version as of February 2024) from OpenAI: the "Assistants". You can follow theses video guides to create a simple chatbot with OpenAI and Azure [https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
+We will use the lastet developement (in beta version, as of February 2024) from OpenAI: the "Assistants". You can [follow these video guides to create a simple chatbot with OpenAI and Azure ](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
 
-Click here to follow the steps ("for a beginner, not a developper")
-[Implement your code inside an app already existing](./pages/appstarter.md)
+You can also follow these steps ("for a beginner, not a developper") to 
+[implement your code inside an already existing app](./pages/appstarter.md)
 
-(Notebook reference assistants)[https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box]
+Some example assistants can be found [here](https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box)
 
 ### Reference links apps starter
 
