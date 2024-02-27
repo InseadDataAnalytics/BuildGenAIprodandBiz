@@ -165,12 +165,13 @@ You can also follow these steps ("for a beginner, not a developper") to
 
 Some example assistants can be found [here](https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box)
 
-### Reference links apps starter
+### Reference links App starter
 
 - [ Starters use case: AI in a box](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
 - [ Sample App With RAG](https://aka.ms/ragchat)
 - [ Call center Claim Ai phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
 - [ Youtube - Github OpenAi RAG App on Azure](https://www.youtube.com/watch?v=j8i-OM5kwiY)
+- [ Evaluating a RAG Chat App](https://github.com/Azure-Samples/ai-rag-chat-evaluator)
 
 
 ## Reference links 
@@ -179,7 +180,7 @@ Some example assistants can be found [here](https://github.com/Azure/AI-in-a-Box
 - [ Models ](./pages/models.md)
 - [ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants)
 - [ Generative AI Guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
-- [ AI in a Box ]()
+- [RAG Ai document intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-retrieval-augumented-generation?view=doc-intel-4.0.0#semantic-chunking-with-document-intelligence-layout-model)
 - [ AI Chat App Hack](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
 - [ Prompt Engineering](./pages/prompts.md)
 
