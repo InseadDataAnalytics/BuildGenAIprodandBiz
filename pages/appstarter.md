@@ -1,13 +1,11 @@
-# Discover the app and include your code
+# Discover an app and include your code
 
-> For facility reason, during classroom.
-> i have already deployed the app in Azure cloud ( during the class i can give you an access to it, but you could also create it by yourself after)
-> if you want to deploy this app follow the [tutorial](https://aka.ms/ragchat) 
+> To deploy this app you can follow this [tutorial](https://aka.ms/ragchat) 
 
-> Don't forget, great product with great feature have great responsabilites:
+> Don't forget, great products with great features have great resposibilities:
  - be well architectured
- - be well deployed software and infrastructure
- - be correctly advised and helped with right person ( skill level of your project/ ambitions ) :)
+ - be well deployed witht solid software and infrastructure
+ - be well-managed 
 
 ## Discover the app
 
@@ -16,35 +14,32 @@
 ![Architecture App with RAG Data sources](../img/appstart/appcomponents.png)
 
 This app is available in three languages [python, Java,Javascript and dotnet](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/other_samples.md)
-I'll stick in python for this tutorial to be more efficient and to avoid confusion with the notebook/Code you have already developed.
+For this exmaple, we will stick to python to be more efficient and to avoid confusion with the notebook/Code you may have already developed for the course.
 
-If you want to deepdive the code and documentation, you could follow this link [Docs Azure search demo](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main/docs)
-So you have deployed this app and you have access to it, like this screenshot :
+If you want to deep-dive in the code and documentation, you could follow this link [Docs Azure search demo](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main/docs)
+So you have deployed this app and you have access to it, like shown in this screenshot:
 
 ![App landpage screenshot](../img/appstart/splashscreen.png)
 
 ## Include your notebook code in the app
 
-So you have correctly create your code in a python notebook and you want to include it in your application
-First of all read this page, it will explain to you how the app is structured and how to include your code in it.
+So you have correctly created your code in a python notebook and you want to include it in your application.
+First, this page explains how the app is structured and how to include your code in it.
 [Customize your app](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/customization.md)
 or [Add you own data files](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/data_ingestion.md)
 
 ### Step 2 : Understanding your code 
 
-As an example i will add this new cool feature GenAI in my app
-Extract from the notebook ["Web article context from a url"](https://aka.ms/inseadGenAI-2)
+As an example let's add this new cool feature GenAI in the app,
+extracted from the notebook ["Web article context from a url"](https://aka.ms/inseadGenAI-2)
 
-> [NOTE] Remember we are loading the content of a web page to use the content in the chat completion( few shot style)
-
-( it's like RAG on files but **on the fly**)
+> [NOTE] Remember we are loading the content of a web page to use the content in the chat completion ("few shot learning" - it's like RAG on files but **on the fly**)
 
 You have to be sure that the necessary library is loaded :
 - Langchain
+The others needed are already provided in the app.
 
-The others necessary are already provided in the app.
-
-Your code was more or less ( code is not complete, it's just an example):
+Your code was more or less (code is not complete, it's just an example):
 ```python
 #import the necessary library
 import openai
@@ -85,18 +80,18 @@ print(answer)
 
 ```
 
-A local function named `askgpt4` that use the `ClientOpenAi` ( with models params and keys included ) to ask a question to the model and return a answer formated by the model.
+A local function named `askgpt4` that uses the `ClientOpenAi` (with models params and keys included) to ask a question to the model and return a answer formated by the model.
 
-This was the code and now we have to adapt it to be able to use it in this app. ( __correctly adapt it__ to be used in the logic of the app)
+This was the code that now we have to adapt to use it in this app. ( __correctly adapt it__ to be used in the logic of the app)
 
 
 ### Step 3 : Include your code in the app
 
-We will made some changes in different files of the app to include code.
+We will make some changes in different files of the app to include code.
 
 #### 3.1 Backend part 
 
-Essentially a user ask a question with a url, send to the chat who have to be detect it automatically in the backend code to be process :
+Essentially a user asks a question with a url, sends it to the chat which has to detect it automatically in the backend code to then process :
 
 Modify the file :
 - app\backend\approaches\chatapproach.py
@@ -114,7 +109,7 @@ from langchain.loader import WebBaseLoader
 **Mandatory** Add the library in the requirements.in file and update the requirements.txt file
 
 When the app is deployed, the requirements.txt file is used to install the necessary library.
-We use in our case langchain so we have to add it otherwise the app will **not work.**
+We use in our case langchain so we have to add - it otherwise the app will **not work.**
 Modify the file:
 - app\backend\requirements.ini
 ![requirements.ini](../img/appstart/requirementsini.png)
@@ -122,7 +117,7 @@ Modify the file:
 cd .\app\backend\
 python -m piptools compile
 ```
-The requirements.txt will be updated with this new library.
+The requirements.txt file will be updated with this new library.
 
 Add functions helper to manage the process
 
@@ -144,13 +139,13 @@ Add functions helper to manage the process
         return content
 ```
 
-Theses 2 functions have the role to detect if the query is a url and to include the content loaded ( by langchain) of the url in the query.
+These 2 functions have the role to detect if the query is a url and to include the content loaded (by langchain) from the url in the query.
 
-Now we have to modify function in the process business to call this new feature.
+Now we have to modify a function in the process to call this new feature.
 
 - app\backend\approaches\chatreadretrieveread.py
 
-We will add a function used in Ai completion ( the tools item ) create to be called in case the model detect if there is the need of use this function
+We will also add this function:
 
 ```python
       tools: List[ChatCompletionToolParam] = [
@@ -188,13 +183,13 @@ We will add a function used in Ai completion ( the tools item ) create to be cal
             }
         ]
 ```	
-We can also modify a little bit the prompt system to take in account this new possibility
+We can also modify a little bit the prompt system to take into account this new capability
 
-> 'the user could give your an url for context and you will load this for context. Be brief in your answers.'
+> 'the user could give you a url for context and you will load this for context. Be brief in your answers.'
 ![prompt](../img/appstart/promptsystel.png)
 
-And lastly manage the call of the function in the process, the new if the if statement to verify if a url was detected and the call of the function to include the content of the url in the query.
-after the else was the "old" code for semantic search in documents and we will keep it ( RAG files and vector)
+And lastly manage the call of the function to the process, the new if then if statement to verify if a url was detected and the call of the function to include the content of the url in the query.
+after the else was the "old" code for semantic search in documents and we will keep it (RAG files and vector)
 
 ```python
         if ( verify_search_url(query_text) == True):
@@ -222,15 +217,15 @@ after the else was the "old" code for semantic search in documents and we will k
 
 ### Step 4 : Deploy your app with this new code
 
-In your terminal console Visual studio code, You could now deploy your new code in your ressource group in Azure.
+In your terminal console Visual studio code, you could now deploy your new code in your ressource group in Azure.
 
 ![](../img/appstart/terminal.png)
 
 ```bash
-azd deploy
+and deploy
 ```
 
-At the end of the deployment, you will have the url of your app and you could test it with the new feature.
+At the end of the deployment, you will have the url of your app and you could test it with the new feature!!
 ![app url](../img/appstart/appurl.png)
 
 
