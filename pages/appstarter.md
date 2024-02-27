@@ -1,13 +1,12 @@
 # How to start and discover this new app
 
-> For facility reason, i have already created this app in Azure in a dedicate resource group ( during the class i can give you the access to it, but you could also create it by yourself by following the tutorial
+> For facility reason, during classroom.
+> i have already deployed the app in Azure cloud ( during the class i can give you the access to it, but you could also create it by yourself by following the tutorial listed [here](https://aka.ms/ragchat) 
 
-> This app is a web app with a python backend.
-
-
-You could find the code of the app in the folder and the tutorial by yourself or by a technical person with this link [App code](https://aka.ms/ragchat)
-
-> Don't forget, great product with great feature have to be well architectured ( software and deployemnt) , be correctly advised and helped with right person with the skill level of your project/ ambitions :)
+> Don't forget, great product with great feature have great responsabilites:
+ - be well architectured
+ - be well deployed software and infrastructure
+ - be correctly advised and helped with right person ( skill level of your project/ ambitions ) :)
 
 ## Discover the app
 
@@ -35,16 +34,16 @@ or [Add you own data files](https://github.com/Azure-Samples/azure-search-openai
 As an example i will add this new cool feature GenAI in my app
 Extract from the notebook ["Web article context from a url"](https://aka.ms/inseadGenAI-2)
 
-> [NOTE] Remember we are loading the content of a web page to use it in our app. ( few shot style)
+> [NOTE] Remember we are loading the content of a web page to use the content in the chat completion( few shot style)
 
 ( it's like RAG on files but **on the fly**)
 
-You have to be sure that the necessary library are loaded :
+You have to be sure that the necessary library is loaded :
 - Langchain
 
-The others are already provided in the app.
+The others necessary are already provided in the app.
 
-Your code was more or less :
+Your code was more or less ( code is not complete, it's just an example):
 ```python
 #import the necessary library
 import openai
@@ -85,17 +84,18 @@ print(answer)
 
 ```
 
-A local function named `askgpt4` that use the `ClientOpenAi` to ask a question to the model and return the answer.
-This was your code and now we have to adapt it for the app to be able to use it in the app. ( __and correctly code it__ in the style of the app)
+A local function named `askgpt4` that use the `ClientOpenAi` ( with models params and keys included ) to ask a question to the model and return a answer formated by the model.
+
+This was the code and now we have to adapt it to be able to use it in this app. ( __correctly adapt it__ to be used in the logic of the app)
 
 
 ### Step 3 : Include your code in the app
 
-We will made some changes in different files of the app to include your code.
+We will made some changes in different files of the app to include code.
 
 #### 3.1 Backend part 
 
-Essentially the fact is a url is send to the chat have to be detect in the backend code to be process :
+Essentially a user ask a question with a url, send to the chat who have to be detect it automatically in the backend code to be process :
 
 Modify the file :
 - app\backend\approaches\chatapproach.py
