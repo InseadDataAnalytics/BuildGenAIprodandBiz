@@ -1,7 +1,8 @@
 # Discover the app and include your code
 
 > For facility reason, during classroom.
-> i have already deployed the app in Azure cloud ( during the class i can give you the access to it, but you could also create it by yourself by following the tutorial listed [here](https://aka.ms/ragchat) 
+> i have already deployed the app in Azure cloud ( during the class i can give you an access to it, but you could also create it by yourself after)
+> if you want to deploy this app follow the [tutorial](https://aka.ms/ragchat) 
 
 > Don't forget, great product with great feature have great responsabilites:
  - be well architectured
