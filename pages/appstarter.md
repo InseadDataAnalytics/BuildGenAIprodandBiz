@@ -1,8 +1,8 @@
-# Discover an app and include your code
+# Discover an app and include your code to add a new feature!
 
 > To deploy this app you can follow this [tutorial](https://aka.ms/ragchat) 
 
-> Don't forget, great products with great features have great resposibilities:
+> Don't forget, great products with great features have great responsibilities:
  - be well architectured
  - be well deployed witht solid software and infrastructure
  - be well-managed 
@@ -13,31 +13,30 @@
 
 ![Architecture App with RAG Data sources](../img/appstart/appcomponents.png)
 
-This app is available in three languages [python, Java,Javascript and dotnet](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/other_samples.md)
-For this exmaple, we will stick to python to be more efficient and to avoid confusion with the notebook/Code you may have already developed for the course.
+This app is available in three languages [python, Java,Javascript and dotnet](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/other_samples.md).
+For this exmaple, we will stick to python to be more efficient and to avoid confusion with the notebook/code you may have already developed for the course.
 
-If you want to deep-dive in the code and documentation, you could follow this link [Docs Azure search demo](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main/docs)
-So you have deployed this app and you have access to it, like shown in this screenshot:
+If you want to deep-dive in the code and documentation, you could follow this link [Docs Azure search demo](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main/docs). 
+
+So you have deployed this app and you have access to it, as shown in this screenshot:
 
 ![App landpage screenshot](../img/appstart/splashscreen.png)
 
 ## Include your notebook code in the app
 
 So you have correctly created your code in a python notebook and you want to include it in your application.
-First, this page explains how the app is structured and how to include your code in it.
+These pages explain how the app is structured and how to include your code in it:
 [Customize your app](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/customization.md)
 or [Add you own data files](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/data_ingestion.md)
 
 ### Step 2 : Understanding your code 
 
-As an example let's add this new cool feature GenAI in the app,
+As an example let's add this new cool GenAI feature in the app,
 extracted from the notebook ["Web article context from a url"](https://aka.ms/inseadGenAI-2)
 
-> [NOTE] Remember we are loading the content of a web page to use the content in the chat completion ("few shot learning" - it's like RAG on files but **on the fly**)
+> [NOTE] Remember we are loading the content of a web page to use it in the chat completion (an example of so-called "few shot learning" - it's like RAG on files but **on the fly**)
 
-You have to be sure that the necessary library is loaded :
-- Langchain
-The others needed are already provided in the app.
+You have to be sure that the Langchain library is loaded (the others needed are already included in the app in this case - else you have to also load).
 
 Your code was more or less (code is not complete, it's just an example):
 ```python
@@ -80,23 +79,23 @@ print(answer)
 
 ```
 
-A local function named `askgpt4` that uses the `ClientOpenAi` (with models params and keys included) to ask a question to the model and return a answer formated by the model.
+A local function named `askgpt4` that uses the `ClientOpenAi` (with models params and keys included) to ask a question to the model and return an answer formated by the model.
 
-This was the code that now we have to adapt to use it in this app. ( __correctly adapt it__ to be used in the logic of the app)
+This was the code that now we have to adapt to use it in this app. (__correctly adapt it__ to be used in the logic of the app)
 
 
 ### Step 3 : Include your code in the app
 
-We will make some changes in different files of the app to include code.
+We will make some changes in different files of the app.
 
 #### 3.1 Backend part 
 
-Essentially a user asks a question with a url, sends it to the chat which has to detect it automatically in the backend code to then process :
+Essentially a user asks a question with a url, sends it to the chat which has to detect it automatically in the backend to then follow the oveall process:
 
-Modify the file :
+Modify the file:
 - app\backend\approaches\chatapproach.py
 
-First import the new library needed :
+First import the new library needed:
 
 ![import library](../img/appstart/importlibrary.png)
     
@@ -108,8 +107,8 @@ from langchain.loader import WebBaseLoader
 
 **Mandatory** Add the library in the requirements.in file and update the requirements.txt file
 
-When the app is deployed, the requirements.txt file is used to install the necessary library.
-We use in our case langchain so we have to add - it otherwise the app will **not work.**
+When the app is deployed, the requirements.txt file is used to install the necessary libraries.
+We use in our case langchain so we have to add it - otherwise the app will **not work.**
 Modify the file:
 - app\backend\requirements.ini
 ![requirements.ini](../img/appstart/requirementsini.png)
@@ -119,7 +118,7 @@ python -m piptools compile
 ```
 The requirements.txt file will be updated with this new library.
 
-Add functions helper to manage the process
+Add helper functions to manage the process
 
 ```python
     def verify_search_url(self, query_text: str):
@@ -139,7 +138,7 @@ Add functions helper to manage the process
         return content
 ```
 
-These 2 functions have the role to detect if the query is a url and to include the content loaded (by langchain) from the url in the query.
+These 2 functions detect if the query is a url and include the content loaded (by langchain) from the url in the query.
 
 Now we have to modify a function in the process to call this new feature.
 
@@ -188,8 +187,8 @@ We can also modify a little bit the prompt system to take into account this new 
 > 'the user could give you a url for context and you will load this for context. Be brief in your answers.'
 ![prompt](../img/appstart/promptsystel.png)
 
-And lastly manage the call of the function to the process, the new if then if statement to verify if a url was detected and the call of the function to include the content of the url in the query.
-after the else was the "old" code for semantic search in documents and we will keep it (RAG files and vector)
+And lastly manage the call of the function to the process. The new "if then" statement to verify if a url was detected and the call of the function to include the content of the url in the query.
+The code after the "else" was the "old" code for semantic search in documents that we will keep (RAG files and vector)
 
 ```python
         if ( verify_search_url(query_text) == True):
