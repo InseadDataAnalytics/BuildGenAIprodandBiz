@@ -1,4 +1,4 @@
-# How to start and discover this new app
+# Discover the app and include your code
 
 > For facility reason, during classroom.
 > i have already deployed the app in Azure cloud ( during the class i can give you the access to it, but you could also create it by yourself by following the tutorial listed [here](https://aka.ms/ragchat) 
