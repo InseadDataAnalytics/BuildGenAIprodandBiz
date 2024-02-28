@@ -213,6 +213,7 @@ Some example assistants can be found [here](https://github.com/Azure/AI-in-a-Box
 - [ RAG Ai document intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-retrieval-augumented-generation?view=doc-intel-4.0.0#semantic-chunking-with-document-intelligence-layout-model)
 - [ AI Chat App Hack](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
 - [ Prompt Engineering](./pages/prompts.md)
+- [ How a transformer works](https://www.youtube.com/watch?v=C6ZszXYPDDw)
 
 
 [More information on Azure Open AI services can be found here](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
