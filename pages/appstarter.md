@@ -42,7 +42,7 @@ Your code was more or less (code is not complete, it's just an example):
 ```python
 #import the necessary library
 import openai
-from langchain.loader import WebBaseLoader
+from langchain_community.document_loaders.web_base import WebBaseLoader
 
 def askgpt4(question, usetext=True):
     """
@@ -100,7 +100,7 @@ First import the new library needed:
 ![import library](../img/appstart/importlibrary.png)
     
 ```python
-from langchain.loader import WebBaseLoader
+from langchain_community.document_loaders.web_base import WebBaseLoader
 ```
 
 ##### 3.1.1
