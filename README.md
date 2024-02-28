@@ -170,6 +170,13 @@ If you want to use the GPTs functions, you can go to the [Cookbook for functions
 Or take a look to this post in forum open AI who explain clearly [how it works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11) 
 But the function called an api or a business process to resolve the user ask
 
+#### Refrence links
+
+- [Mistral notebook with functions](https://colab.research.google.com/github/mistralai/cookbook/blob/main/function_calling.ipynb)
+   - [Mistral cookbook functions](https://docs.mistral.ai/guides/function-calling/)
+- [Cookbook OpenAI functions](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models)
+- [Explanation how functions works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11)  
+
 ### Agents / Assistants
 
 It's next iteration with thread / messages and tools ( AKA Functions) available ( 128 if you want it) with possibilitis to add RAG or code interpreter to permit a "agent" with prompt system or persona to have the autonomy to called by "himself" the function/tools to resolve the user ask
