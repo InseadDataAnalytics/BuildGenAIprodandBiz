@@ -147,7 +147,7 @@ __Don't be afraid of **python** you will also get help!__
 
  :smiling_face_with_three_hearts:
 
-## Gpts / RAG / Actions
+## Gpts / RAG / functions
 
 So you have now seen some examples of what you can do with Gen AI. You can now try to explore the [OpenAI API GPTS actions ](https://platform.openai.com/docs/actions/introduction) to see what else is possible.
 
@@ -157,6 +157,24 @@ What is it about ? Gpt's custom can give a chabot with some capabilities to inte
 - Includes tools like browsing, DALL·E, and Code Interpreter
 - Comes with preset starter prompts for new and returning users
 - Has custom actions which allow you to connect the GPT to APIs
+
+### RAG ( AKA retrieval augmented generation)
+
+a possibility to grounded with verified data ( from pdf files , csv, html, etc) to give a more accurate answer to the user ask
+or with a database vector ( contains embeddings of the data) to give a more accurate answer to the user ask
+
+### Functions
+
+Functions it's first to give model a possibility to determine if a function is relevant to the user ask for resolve
+If you want to use the GPTs functions, you can go to the [Cookbook for functions](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models) to see what else is possible.
+Or take a look to this post in forum open AI who explain clearly [how it works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11) 
+But the function called an api or a business process to resolve the user ask
+
+### Agents / Assistants
+
+It's next iteration with thread / messages and tools ( AKA Functions) available ( 128 if you want it) with possibilitis to add RAG or code interpreter to permit a "agent" with prompt system or persona to have the autonomy to called by "himself" the function/tools to resolve the user ask
+Take a look on this documentation repository about this[ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants))
+
 
 ![Sandbox assistants Open](img/gptsfunctions.png)
 
