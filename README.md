@@ -147,6 +147,18 @@ __Don't be afraid of **python** you will also get help!__
 
  :smiling_face_with_three_hearts:
 
+## Gpts / RAG / Actions
+
+So you have now seen some examples of what you can do with Gen AI. You can now try to explore the [OpenAI API GPTS actions ](https://platform.openai.com/docs/actions/introduction) to see what else is possible.
+
+What is it about ? Gpt's custom can give a chabot with some capabilities to interact with users and you can open it to the world, customize the user experience, add some files for custom the grounded experience
+
+- Has custom instructions which determine the way the GPT interacts with users
+- Includes tools like browsing, DALL·E, and Code Interpreter
+- Comes with preset starter prompts for new and returning users
+- Has custom actions which allow you to connect the GPT to APIs
+
+![Sandbox assistants Open](img/gptsfunctions.png)
 
 ## Gen AI Products in Real World (Optional)
 
