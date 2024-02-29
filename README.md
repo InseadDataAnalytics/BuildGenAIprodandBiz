@@ -1,4 +1,4 @@
-   # INSEAD MBA Course "Building genAI Products and Business"
+   # INSEAD MBA Course "Building genAI Products and Businesses"
    **T. Evgeniou, Professor INSEAD** [GitHub](https://github.com/tevgeniou) | [LinkedIn](https://www.linkedin.com/in/theodoros-evgeniou-5397b/)
 
 <b><it>The material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </b></it>
@@ -165,7 +165,7 @@ or with a database vector ( contains embeddings of the data) to give a more accu
 
 ### Functions
 
-Functions it's first to give model a possibility to determine if a function is relevant to the user ask for resolve
+Functions it's first step to give model a tool / possibility to determine if a function is relevant to the user ask.
 If you want to use the GPTs functions, you can go to the [Cookbook for functions](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models) to see what else is possible.
 Or take a look to this post in forum open AI who explain clearly [how it works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11) 
 But the function called an api or a business process to resolve the user ask
@@ -179,7 +179,9 @@ But the function called an api or a business process to resolve the user ask
 
 ### Agents / Assistants
 
-It's next iteration with thread / messages and tools ( AKA Functions) available ( 128 if you want it) with possibilitis to add RAG or code interpreter to permit a "agent" with prompt system or persona to have the autonomy to called by "himself" the function/tools to resolve the user ask
+It's the next step with new concepts as thread / messages with the addin of tools ( AKA Functions) available ( 128 tools if you want it).
+You could still add RAG ( retrieval ) or code interpreter ( to permit launch of code) to allow a "agent / assistant" ( with prompt system or persona ) to have the autonomy/choice (Programmatic choice :)) to launch/call by "himself" the function/tools to resolve the user ask/
+
 Take a look on this documentation repository about this[ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants))
 
 
