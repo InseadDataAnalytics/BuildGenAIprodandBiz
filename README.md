@@ -1,4 +1,4 @@
-   # INSEAD MBA Course "Building genAI Products and Businesses"
+   # INSEAD MBA Course "[Building genAI Products and Businesses](https://github.com/InseadDataAnalytics/BuildGenAIprodandBiz/blob/main/Building%20GenAI%20Products%20and%20Businesses%20Outline%20.pdf)"
    **T. Evgeniou, Professor INSEAD** [GitHub](https://github.com/tevgeniou) | [LinkedIn](https://www.linkedin.com/in/theodoros-evgeniou-5397b/)
 
 <b><it>The material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </b></it>
