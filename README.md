@@ -17,6 +17,7 @@ Summary of the session:
 - [First steps](#first-steps)
 - [Create a user login on OpenAI and prepare your organization and keys](#create-a-user-login-on-openai-and-prepare-your-organization-and-keys)
 - [Exploring genAI: Three Examples](#exploring-genai-three-examples)
+- [Gpts / RAG / functions](#gpts--rag--functions)
 - [Gen AI in real world](#gen-ai-in-real-world) 
 - [Reference links](#reference-links)
 
@@ -170,7 +171,7 @@ If you want to use the GPTs functions, you can go to the [Cookbook for functions
 Or take a look to this post in forum open AI who explain clearly [how it works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11) 
 But the function called an api or a business process to resolve the user ask
 
-#### Refrence links
+#### Reference links
 
 - [Mistral notebook with functions](https://colab.research.google.com/github/mistralai/cookbook/blob/main/function_calling.ipynb)
    - [Mistral cookbook functions](https://docs.mistral.ai/guides/function-calling/)
@@ -184,7 +185,8 @@ You could still add RAG ( retrieval ) or code interpreter ( to permit launch of 
 
 Take a look on this documentation repository about this[ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants))
 
-
+### Gpts capture with RAG and functions
+An example of a Gpt's with setup to be able to retrieve informations from documents and some functions
 ![Sandbox assistants Open](img/gptsfunctions.png)
 
 ## Gen AI Products in Real World (Optional)
