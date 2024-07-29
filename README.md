@@ -1,135 +1,76 @@
-   # INSEAD MBA Course "[Building genAI Products and Businesses](https://github.com/InseadDataAnalytics/BuildGenAIprodandBiz/blob/main/Building%20GenAI%20Products%20and%20Businesses%20Outline%20.pdf)"
+# Building genAI Products and Businesses 
    **T. Evgeniou, Professor INSEAD** [GitHub](https://github.com/tevgeniou) | [LinkedIn](https://www.linkedin.com/in/theodoros-evgeniou-5397b/)
 
-<b><it>The material for session 1 was developed by **Olivier Mertens**, Developer Audience, Azure Open AI Service, @Microsoft [GitHub](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier) </b></it>
+During the course we will be using [Google Collab](https://colab.research.google.com/) (browser based) to run python scripts that will be calling openAI LLMs through the openAI API. This is why you will need to have a Gmail account (see [information here](https://support.google.com/mail/answer/56256?hl=en)) as well as an OpenAI one (see [information here](https://platform.openai.com/signup)) - in case you do not have these yet, please make sure you create them.  [Github](https://github.com/olivMertens)
+
+You will find here instructions on how to prepare for the course. You will need to: 
+- Purchase some openAI credit (e.g., worth $10) that you can use for API calls to the openAI LLM models
+- Open a sample Google Colab notebook 
+- Create your **secret** (do not share with anyone) OpenAI API Key
+- Add your openAI API key in your colab notebook
+- Run your first example of using API calls to the openAI LLMs
+</br>
+<it>Note:</it> This material was initially developed with the support of Olivier Mertens, Developer Audience, Azure Open AI Service, Microsoft [Github](https://github.com/olivMertens) | [LinkedIn](https://linkedin.com/in/mertensolivier/)
 </br>
 </br>
 
-In the first session, we will learn about some Gen AI tools that we will use for product prototyping during the class.
+## Purchase some openAI credit that you can use for API calls to the openAI LLM models
 
-We'll use  OpenAI Service and keys to access/use models with the use of apis and [Google Collab](https://colab.research.google.com/) (browser based) for some python coding. 
+1. [Log in your openAI account](https://platform.openai.com/)
+2. Go to [billing](https://platform.openai.com/settings/organization/billing/overview) - Note: in case the links change, please search for "billing" or "API credit" or equivalent.
+3. Purchase $10 worth of credit
+4. You can see [information about pricing here](https://openai.com/api/pricing/) and you will also be able to monitor your spending in your billing dashboard. 
 
-> **[NOTE]**
-> You can also use all notebooks in a local/your computer: with Visual studio code or using Conda to launch Jupyter notebook
-> You have to install this sofware to use in in local
+**Note: This is different from being an openAI subsrciber for using GPT, and you need to purchase credit even if you are a premium GPT user.**
 
-Summary of the session:
-- [First steps](#first-steps)
-- [Create a user login on OpenAI and prepare your organization and keys](#create-a-user-login-on-openai-and-prepare-your-organization-and-keys)
-- [Exploring genAI: Three Examples](#exploring-genai-three-examples)
-- [Gpts / RAG / functions](#gpts--rag--functions)
-- [Gen AI in real world](#gen-ai-in-real-world) 
-- [Reference links](#reference-links)
+## Open a sample Google Colab notebook
 
+First you need to have loged in both to your Gmail and your OpenAI accounts. Make sure you are logged in at [Google Colab](https://colab.research.google.com/). 
 
-## First steps 
+Let's now start our first Colab Python notebook! All you need to do is to [click on this notebook](https://colab.research.google.com/drive/1Sds6CJffHtxCGF_bok9uwLnyETgKheGz?usp=sharing), which will open a browser tab with a python notebook on Google Colab. Once open, you can make a copy of the file in your personal Google drive (select "File -> Save a Copy in Drive"), that you will then be able to edit and use. 
 
-### OpenAI Account
+## Add your openAI API key in your colab notebook
 
-1. **Go to the OpenAI website**:  [https://www.openai.com/](https://www.openai.com/)
+Open the copy of the file from you own drive (select "File --> Open Notebook"). Then, as indicated in the screenshot below, add your OpenAI API key. You can get your API key folowing the steps below. 
 
-2. **Create an account**: Click on the 'Sign Up' button on the top right corner of the website. Fill in your details and follow the steps to create your account.
+<img width="1120" alt="Add API Key Colab" src="https://github.com/user-attachments/assets/e44acb63-b89c-450a-9c87-61b9c2def099">
 
-3. **Verify your email**: Check your email for a verification link from OpenAI. Click on the link to verify your account.
+## Create your secret (do not share with anyone) OpenAI API Key
 
-4. **Log in to your account**: After verifying your email, log in to your account using your credentials.
+1. [Log in your openAI account](https://platform.openai.com/)
+2. Go to the [OpenAI playground dashboard](https://platform.openai.com/playground)
+3. Click on the "API keys" located on the left menu
+</br>
+<img width="287" alt="API Keys" src="https://github.com/user-attachments/assets/319e35af-752c-4607-88ac-00815f88191c">
 
-#### Discover Sandbox GPTs 
+4. Create a new API key by clicking on the "Create new secret key" button, and give it a name (e.g., INSEAD_BGenAIPB). Before selecitng "Done", copy the key and save it in a safe place! <b>Important: Never share your API key with others! Whoever has access to your API key can be charging your account when using it! It's also a good practice to regularly rotate your API keys, or create a new one for each application or usage.</b>
+</br>
+<img width="1107" alt="Create API Key" src="https://github.com/user-attachments/assets/c629563a-4db6-4e01-82ce-338ec5fcfbae">.
 
-To experiment with the key concepts of [prompt engineering](./pages/prompts.md), [models](./pages/models.md) and [RAG - retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) you could visit and test the sandbox GPTs (just announced by OpenAI in November 2023) to play with a chatbot interface without the need to code ("No Code" environment). To do so, you can go to [https://platform.openai.com/playground](https://platform.openai.com/playground)
-
-![Alt Text](img/assistantchatbotcreation.png)
-Select your model (e.g., we can select gpt-4 or earlier - and less costly - ones like gpt-3.5-turbo)
-![Alt Text](img/modelsGpts.png)
-
-If you want to know about differences between the available LLM models, you can deep dive at [this link](https://platform.openai.com/docs/models/overview)
-
-This interface will be shown after you have correctly created your chatbot
-![Alt text](img/playgroundChatbotOpenAi.png)
-
-You can also read this for some more background [on basic prompt engineering](./pages/prompts.md)
-
-Other resources:
-- Sandbox / Playground Open AI [https://platform.openai.com/playground](https://platform.openai.com/playground)
-- Documentation Assistants [https://platform.openai.com/docs/assistants/overview](https://platform.openai.com/docs/assistants/overview)
-- API With openAI [https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
+You can now also paste the API key in the Colab notebook as indicated in the previous step. When you create new Colab notebooks, the key will be automatically added. 
 
 
-## Create a user login on OpenAI and prepare your organization and keys
+### Run the Google Colab notebook
+To use/run a notebook you have to click on every small "play button" inside the notebook **on the left** of each code chunk. You may encounter warning pop-up windows - click **ok** or **execute** to continue.
+
+![Alt text ](./img/warningnotebook.png)
+
+</br>
+
+>**[Note]** The very first "code chunk" (that installs the openai package) may take a few seconds to run and will be generating some messages. Simply wait till it completes running. 
 
 
-1. **Access the API dashboard**: Once logged in, navigate to the API dashboard named Api Keys. 
+</br>
+</br>
 
-2. **Create a new API key**: If you don't already have an API key, you can create a new one by clicking on the 'Create new API key' button.
+## Exploring genAI: Three More Examples
 
-![Alt text](img/secretkeygenerate.png)
-You can select the name you want
-
-You will have this kind of view after creating a key (or several keys) ![Alt text](img/apiKeysexampleopenAi.png)
-<br>
-<br>
-
-> **IMPORTANT**
-> Don't forget every usage of a model with OpenAI will **cost**  something! ( and the price depends of your chosen model)
-> check this link to understand the difference in pricing / models)[https://openai.com/pricing]
-
-7. **Copy your API key**: After creating your API key, make sure to copy it and store it <b>somewhere safe</b>. This key is used to authenticate your requests to the OpenAI API. <b>Whoever has access to it will be charging your account when using it!</b>
-
-8. **Set up your organization**: In the API dashboard, you can also set up your organization if needed. This involves adding other users to your organization and managing their access levels.
-
-![Alt text](img/organizationOpenAi.png)
-
-**Remember**, keep your Open AI API key secure and **do not share** it with anyone. It's also a good practice to regularly rotate your API keys, or create a new one for each application or usage.
-
-
-### Google account & Collab Notebook
-
-In order to simplify potential issues with different python versions or different operating systems and problematic install on your personal computer.
-
-We will use **notebook Collab** for this course. You can of course also work on your computer if you choose to, using for example [Anaconda](https://www.anaconda.com/) (beyond the course).
-
-- You need to have a Google Gmail Account. If not [create a new one](https://support.google.com/mail/answer/56256?hl=en-EN)
-
-## Exploring genAI: Three Examples
-
-We will use these three colab notebooks as starting examples. Go to [https://colab.research.google.com/](https://colab.research.google.com/) and follow these links to have the latest notebooks for course session 1:
+Here are three colab notebooks as starting examples:
 <br>
 - Interview questions generation [https://aka.ms/inseadGenAi-1](https://aka.ms/inseadGenAI-1)
 - Web article generation [https://aka.ms/inseadGenAi-2](https://aka.ms/inseadGenAI-2)
 - (This one will require some more steps, see below) Extract audio with whisper and process the text [https://aka.ms/inseadGenAi-3](https://aka.ms/inseadGenAi-3)
 
-We will be adding more over time (as you will notice). 
-
-You may encounter warning pop-up windows - click **ok** or **execute** to continue.
-
-![Alt text ](./img/warningnotebook.png)
-
-When a notebook is correctly imported in your personal collab, you have to first import your __secrets__ credentials.
-
-- Add your secrets (Key and organization imported form OpenAI **sk-XXX** and **org-xxxxxx**) in the left panel in Google Collab
-
-![Alt text](./img/secrets.png)
-Create a variable secret one at a time:
-
-- Copy/paste this name: ````OPENAI_API_KEY```` 
-- Copy paste your sk-key inside the right input named value
-- Click on the left blue button to render the secret available in your notebook
-
-> Next, if needed (you do **not** need to do this for the course), you can also add a __secret__ key and value for an organization:
-
-- Copy/paste this name: ````OPENAI_ORGANIZATION````
-- Copy paste your org-key inside the right input input named value
-- Click on left blue button to render the secret available in your notebook
-
-</br>
-
-To use/run a notebook you have to click on every small "play button" inside the notebook **on the left** of the code chunk.
-
- ![Alt text](./img/playbuttonnotebook.png)
-
->**[Note]** The three example notebooks the very first "code chunk" (that installs packages) may take a few seconds to run and will be generating some messages. Simply wait till it completes running. 
-
-</br> 
 
 For the third (audio analysis) Notebook, you can import you own mp4 file video or audio to analyse. To do so:
 - Click on the folder button on the left
@@ -142,89 +83,11 @@ For the third (audio analysis) Notebook, you can import you own mp4 file video o
 </br>
 
 
+
+</br> 
+
 ## You are now ready to explore! Have Fun!
 
 __Don't be afraid of **python** you will also get help!__
 
  :smiling_face_with_three_hearts:
-
-## Gpts / RAG / functions
-
-So you have now seen some examples of what you can do with Gen AI. You can now try to explore the [OpenAI API GPTS actions ](https://platform.openai.com/docs/actions/introduction) to see what else is possible.
-
-What is it about ? Gpt's custom can give a chabot with some capabilities to interact with users and you can open it to the world, customize the user experience, add some files for custom the grounded experience
-
-- Has custom instructions which determine the way the GPT interacts with users
-- Includes tools like browsing, DALL·E, and Code Interpreter
-- Comes with preset starter prompts for new and returning users
-- Has custom actions which allow you to connect the GPT to APIs
-
-### RAG ( AKA retrieval augmented generation)
-
-a possibility to grounded with verified data ( from pdf files , csv, html, etc) to give a more accurate answer to the user ask
-or with a database vector ( contains embeddings of the data) to give a more accurate answer to the user ask
-
-### Functions
-
-Functions it's first step to give model a tool / possibility to determine if a function is relevant to the user ask.
-If you want to use the GPTs functions, you can go to the [Cookbook for functions](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models) to see what else is possible.
-Or take a look to this post in forum open AI who explain clearly [how it works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11) 
-But the function called an api or a business process to resolve the user ask
-
-#### Reference links
-
-- [Mistral notebook with functions](https://colab.research.google.com/github/mistralai/cookbook/blob/main/function_calling.ipynb)
-   - [Mistral cookbook functions](https://docs.mistral.ai/guides/function-calling/)
-- [Cookbook OpenAI functions](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models)
-- [Explanation how functions works](https://community.openai.com/t/how-does-function-calling-actually-work-for-the-assistants-api/641440/11)  
-
-### Agents / Assistants
-
-It's the next step with new concepts as thread / messages with the addin of tools ( AKA Functions) available ( 128 tools if you want it).
-You could still add RAG ( retrieval ) or code interpreter ( to permit launch of code) to allow a "agent / assistant" ( with prompt system or persona ) to have the autonomy/choice (Programmatic choice :)) to launch/call by "himself" the function/tools to resolve the user ask/
-
-Take a look on this documentation repository about this[ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants))
-
-### Gpts capture with RAG and functions
-An example of a Gpt's with setup to be able to retrieve informations from documents and some functions
-![Sandbox assistants Open](img/gptsfunctions.png)
-
-## Gen AI Products in Real World (Optional)
-
-Now you have an idea of what one can do with Gen AI - one can use it for many different applications. However, going from a Python Notebook "demo" to an actual product requires some engineering. The tools needed are in some ways like lego blocks: one can combine them to create their own solution.
-
-Let's now see how to build actual gen AI products! Let's start with a really simple use case. The idea of the example here is to insert some python code inside a file of an existing web application to be able to use it as part of that application.
-
-We use python  for simplicity, but one can explore other languages like dotnet, java or others. 
-
-> Note: Some software architecture decisions could be **critical** in your launch of a product. Understanding the choices and trade offs is very important, but not the purpose of this course.
-
-We will use the lastet developement (in beta version, as of February 2024) from OpenAI: the "Assistants". You can [follow these video guides to create a simple chatbot with OpenAI and Azure ](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
-
-You can also follow these steps ("for a beginner, not a developper") to 
-[implement your code inside an already existing app](./pages/appstarter.md)
-
-Some example assistants can be found [here](https://github.com/Azure/AI-in-a-Box/tree/main/gen-ai/Assistants/api-in-a-box)
-
-### Reference links App starter
-
-- [ Starters use case: AI in a box](https://github.com/Azure/AI-in-a-Box/tree/main?tab=readme-ov-file)
-- [ Sample App With RAG](https://aka.ms/ragchat)
-- [ Call center Claim AI phone bot](https://github.com/clemlesne/claim-ai-phone-bot)
-- [ Youtube - Github OpenAi RAG App on Azure](https://www.youtube.com/watch?v=j8i-OM5kwiY)
-- [ Evaluating a RAG Chat App](https://github.com/Azure-Samples/ai-rag-chat-evaluator)
-
-
-## Reference links 
-
-- [ AI Term Glossary](./pages/glossary.md)
-- [ Models ](./pages/models.md)
-- [ Azure Assistants](https://github.com/olivMertens/AzureOpenAiAssistants)
-- [ Generative AI Guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
-- [ RAG Ai document intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-retrieval-augumented-generation?view=doc-intel-4.0.0#semantic-chunking-with-document-intelligence-layout-model)
-- [ AI Chat App Hack](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
-- [ Prompt Engineering](./pages/prompts.md)
-- [ How a transformer works](https://www.youtube.com/watch?v=C6ZszXYPDDw)
-
-
-[More information on Azure Open AI services can be found here](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
